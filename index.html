@@ -8,23 +8,35 @@
 
     <!-- daisy UI -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
-
-
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- font awsome -->
+    <script src="https://kit.fontawesome.com/21a3ce7507.js" crossorigin="anonymous"></script>
+
+    <style>
+        .font{
+            font-family: 'Open Sans', sans-serif;
+        }
+    </style>
+
 </head>
 
 <body>
 
     <!-- header -->
-    <div class="bg-yellow-500 lg:min-h-screen">
+    <div class="bg-yellow-100 lg:min-h-screen font">
         <div class=" container mx-auto min-h-screen lg:flex justify-center items-center gap-10">
-            <div class="text-center">
-                <h1 class="text-2xl font-bold">---SALE FEVER---</h1>
-                <h1 class="text-5xl font-bold">Purchase TK 200 or <br>above & <span class="text-[#E527B2]">get 20%
+            <div class="text-center p-4">
+                <h1 class="text-2xl lg:text-3xl lg:font-medium mb-9">---SALE FEVER---</h1>
+                <h1 class="text-3xl font-bold lg:text-5xl lg:font-bold mb-12">Purchase TK 200 or <br>above & <span class="text-[#E527B2]">get 20%
                         off</span></h1>
-                <div class="flex justify-center items-center">
-                    <p>Use Promo Code</p>
-                    <button class="btn bg-[#E527B2] text-white">SELL200</button>
+                <div class="flex justify-center items-center gap-4">
+                    <p class="text-xl lg:text-2xl lg:font-medium">Use Promo Code</p>
+                    <button class="btn bg-[#E527B2] text-white text-xl lg:text-2xl lg:font-semibold">SELL200</button>
                 </div>
             </div>
             <div>
@@ -35,182 +47,239 @@
     <!-- header end -->
 
     <!-- main part -->
-    <div class="container mx-auto mt-28 flex justify-center items-center">
-        <div class="w-full flex flex-col lg:flex-row justify-between">
-            <div class="w-full lg:w-3/4 p-4">
-                <div class=" lg:w-full">
-                    <h1 class="text-2xl">Kotchenwares</h1>
-                    <div class="flex flex-col lg:flex-row gap-4 justify-between items-center">
-                        <div onclick="buyNowParent(this)" class="card w-full lg:w-96 bg-base-100 shadow-xl cursor-pointer">
-                            <div class="bg-yellow-400 w-11/12 mx-auto rounded-lg mt-8">
-                                <figure>
-                                    <img class="p-3" src="./images/prod1.png" alt="Shoes" />
-                                </figure>
+    <div class="bg-[#F8F8F8] font">
+        <div class="container mx-auto pt-28 flex justify-center items-center">
+            <div class="w-full flex flex-col lg:flex-row justify-between">
+                <div class="w-full lg:w-3/4 p-4">
+                    <div class=" lg:w-full mb-10">
+                        <h1 class="text-3xl lg:text-5xl font-semibold mb-7 text-center lg:text-start">Kotchenwares</h1>
+                        <div class="flex flex-col lg:flex-row gap-4 justify-between items-center">
+                            <div onclick="buyNowParent(this)" class="card w-full lg:w-96 bg-base-100 shadow-xl cursor-pointer">
+                                <div class="bg-[#1111110d] lg:h-44 w-11/12 mx-auto rounded-lg mt-4">
+                                    <figure>
+                                        <img class="p-3" src="./images/prod1.png" alt="Shoes" />
+                                    </figure>
+                                </div>
+                                <div class="text-center mt-5 mb-2 text-yellow-400">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class="text-center">
+                                    <h2 class="text-xl font-semibold text-black">K. Accessories</h2>
+                                    <p class="text-[#111111] opacity-50 text-xl font-normal mt-2 pb-6">39.00 TK</p>
+                                </div>
                             </div>
-                            <div class="card-body text-center">
-                                <h2 class="text-2xl">Shoes!</h2>
-                                <p>18.50 $</p>
+                            <div onclick="buyNowParent(this)" class="card w-full lg:w-96 bg-base-100 shadow-xl cursor-pointer">
+                                <div class="bg-[#1111110d] lg:h-44 w-11/12 mx-auto rounded-lg mt-4">
+                                    <figure>
+                                        <img class="p-3" src="./images/prod2.png" alt="Shoes" />
+                                    </figure>
+                                </div>
+                                <div class="text-center mt-5 mb-2 text-yellow-400">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class="text-center">
+                                    <h2 class="text-xl font-semibold text-black">K. Accessories</h2>
+                                    <p class="text-[#111111] opacity-50 text-xl font-normal mt-2 pb-6">25.00 TK</p>
+                                </div>
+                            </div>
+                            <div onclick="buyNowParent(this)" class="card w-full lg:w-96 bg-base-100 shadow-xl cursor-pointer">
+                                <div class="bg-[#1111110d] lg:h-44 w-11/12 mx-auto rounded-lg mt-4">
+                                    <figure>
+                                        <img class="p-3" src="./images/prod3.png" alt="Shoes" />
+                                    </figure>
+                                </div>
+                                <div class="text-center mt-5 mb-2 text-yellow-400">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class="text-center">
+                                    <h2 class="text-xl font-semibold text-black">Home Cooker</h2>
+                                    <p class="text-[#111111] opacity-50 text-xl font-normal mt-2 pb-6">49.00 TK</p>
+                                </div>
                             </div>
                         </div>
-                        <div onclick="buyNowParent(this)" class="card w-full lg:w-96 bg-base-100 shadow-xl cursor-pointer">
-                            <div class="bg-yellow-400 w-11/12 mx-auto rounded-lg mt-8">
-                                <figure>
-                                    <img class="p-3" src="./images/prod2.png" alt="Shoes" />
-                                </figure>
+                    </div>
+                    <div class=" lg:w-full mb-10">
+                        <h1 class="text-3xl lg:text-5xl font-semibold mb-7 text-center lg:text-start">Kotchenwares</h1>
+                        <div class="flex flex-col lg:flex-row gap-4 justify-between items-center">
+                            <div onclick="buyNowParent(this)" class="card w-full lg:w-96 bg-base-100 shadow-xl cursor-pointer">
+                                <div class="bg-[#1111110d] lg:h-44 w-11/12 mx-auto rounded-lg mt-4">
+                                    <figure>
+                                        <img class="p-3" src="./images/prod4.png" alt="Shoes" />
+                                    </figure>
+                                </div>
+                                <div class="text-center mt-5 mb-2 text-yellow-400">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class="text-center">
+                                    <h2 class="text-xl font-semibold text-black">Sports Black Cap</h2>
+                                    <p class="text-[#111111] opacity-50 text-xl font-normal mt-2 pb-6">49.00 TK</p>
+                                </div>
                             </div>
-                            <div class="card-body text-center">
-                                <h2 class="text-2xl">Shoes!</h2>
-                                <p>20.50 $</p>
+                            <div onclick="buyNowParent(this)" class="card w-full lg:w-96 bg-base-100 shadow-xl cursor-pointer">
+                                <div class="bg-[#1111110d] lg:h-44 w-11/12 mx-auto rounded-lg mt-4">
+                                    <figure>
+                                        <img class="p-3" src="./images/prod5.png" alt="Shoes" />
+                                    </figure>
+                                </div>
+                                <div class="text-center mt-5 mb-2 text-yellow-400">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class="text-center">
+                                    <h2 class="text-xl font-semibold text-black">Full Jersy Set</h2>
+                                    <p class="text-[#111111] opacity-50 text-xl font-normal mt-2 pb-6">69.00 TK</p>
+                                </div>
+                            </div>
+                            <div onclick="buyNowParent(this)" class="card w-full lg:w-96 bg-base-100 shadow-xl cursor-pointer">
+                                <div class="bg-[#1111110d] lg:h-44 w-11/12 mx-auto rounded-lg mt-4">
+                                    <figure>
+                                        <img class="p-3" src="./images/prod6.png" alt="Shoes" />
+                                    </figure>
+                                </div>
+                                <div class="text-center mt-5 mb-2 text-yellow-400">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class="text-center">
+                                    <h2 class="text-xl font-semibold text-black">Sports cates</h2>
+                                    <p class="text-[#111111] opacity-50 text-xl font-normal mt-2 pb-6">169.00 TK</p>
+                                </div>
                             </div>
                         </div>
-                        <div onclick="buyNowParent(this)" class="card w-full lg:w-96 bg-base-100 shadow-xl cursor-pointer">
-                            <div class="bg-yellow-400 w-11/12 mx-auto rounded-lg mt-8">
-                                <figure>
-                                    <img class="p-3" src="./images/prod3.png" alt="Shoes" />
-                                </figure>
+                    </div>
+                    <div class="lg:w-full">
+                        <h1 class="text-3xl text-center lg:text-start lg:text-5xl font-semibold mb-7">Kotchenwares</h1>
+                        <div class="flex flex-col lg:flex-row gap-4 justify-between items-center">
+                            <div onclick="buyNowParent(this)" class="card w-full lg:w-96 bg-base-100 shadow-xl cursor-pointer">
+                                <div class="bg-[#1111110d] lg:h-44 w-11/12 mx-auto rounded-lg mt-4">
+                                    <figure>
+                                        <img class="p-3" src="./images/prod7.png" alt="Shoes" />
+                                    </figure>
+                                </div>
+                                <div class="text-center mt-5 mb-2 text-yellow-400">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class="text-center">
+                                    <h2 class="text-xl font-semibold text-black">Single Relax Chair</h2>
+                                    <p class="text-[#111111] opacity-50 text-xl font-normal mt-2 pb-6">185.00 TK</p>
+                                </div>
                             </div>
-                            <div class="card-body text-center">
-                                <h2 class="text-2xl">Shoes!</h2>
-                                <p>24.50 $</p>
+                            <div onclick="buyNowParent(this)" class="card w-full lg:w-96 bg-base-100 shadow-xl cursor-pointer">
+                                <div class="bg-[#1111110d] lg:h-44 w-11/12 mx-auto rounded-lg mt-4">
+                                    <figure>
+                                        <img class="p-3" src="./images/prod8.png" alt="Shoes" />
+                                    </figure>
+                                </div>
+                                <div class="text-center mt-5 mb-2 text-yellow-400">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class="text-center">
+                                    <h2 class="text-xl font-semibold text-black">Children play</h2>
+                                    <p class="text-[#111111] opacity-50 text-xl font-normal mt-2 pb-6">299.00 TK</p>
+                                </div>
+                            </div>
+                            <div onclick="buyNowParent(this)" class="card w-full lg:w-96 bg-base-100 shadow-xl cursor-pointer">
+                                <div class="bg-[#1111110d] lg:h-44 w-11/12 mx-auto rounded-lg mt-4">
+                                    <figure>
+                                        <img class="p-3" src="./images/prod9.png" alt="Shoes" />
+                                    </figure>
+                                </div>
+                                <div class="text-center mt-5 mb-2 text-yellow-400">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class="text-center">
+                                    <h2 class="text-xl font-semibold text-black">Flexible Sofa</h2>
+                                    <p class="text-[#111111] opacity-50 text-xl font-normal mt-2 pb-6">339.00 TK</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class=" lg:w-full ">
-                    <h1 class="text-2xl">Kotchenwares</h1>
-                    <div class="flex flex-col lg:flex-row gap-4 justify-between items-center">
-                        <div onclick="buyNowParent(this)" class="card w-full lg:w-96 bg-base-100 shadow-xl cursor-pointer">
-                            <div class="bg-yellow-400 w-11/12 mx-auto rounded-lg mt-8">
-                                <figure>
-                                    <img class="p-3" src="./images/prod4.png" alt="Shoes" />
-                                </figure>
-                            </div>
-                            <div class="card-body text-center">
-                                <h2 class="text-2xl">Shoes!</h2>
-                                <p>28.50 $</p>
-                            </div>
-                        </div>
-                        <div onclick="buyNowParent(this)" class="card w-full lg:w-96 bg-base-100 shadow-xl cursor-pointer">
-                            <div class="bg-yellow-400 w-11/12 mx-auto rounded-lg mt-8">
-                                <figure>
-                                    <img class="p-3" src="./images/prod5.png" alt="Shoes" />
-                                </figure>
-                            </div>
-                            <div class="card-body text-center">
-                                <h2 class="text-2xl">Shoes!</h2>
-                                <p>30.50 $</p>
-                            </div>
-                        </div>
-                        <div onclick="buyNowParent(this)" class="card w-full lg:w-96 bg-base-100 shadow-xl cursor-pointer">
-                            <div class="bg-yellow-400 w-11/12 mx-auto rounded-lg mt-8">
-                                <figure>
-                                    <img class="p-3" src="./images/prod6.png" alt="Shoes" />
-                                </figure>
-                            </div>
-                            <div class="card-body text-center">
-                                <h2 class="text-2xl">Shoes!</h2>
-                                <p>66.50 $</p>
+                <div class="lg:w-1/4 flex flex-col justify-center items-center lg:mt-14 px-4 lg:justify-start space-y-4">
+                    <div class="w-full lg:w-90 bg-base-100 bg-white rounded-lg mt-9">
+                        <div class="w-full py-8 px-7 space-y-2 rounded-lg">
+                            <h2 class="card-title">Have coupon?</h2>
+                            <div class="flex">
+                                <div class="form-control">
+                                    <input id="coupne-code" type="text" placeholder="Coupon code" class="input input-bordered lg:w-56 w-80" />
+                                </div>
+                                <div>
+                                    <button id="apply-btn" class="text-base btn bg-[#E527B2] absolute -mx-[80px] hover:bg-[#b03e94] text-white rounded-r-lg rounded-none" disabled>Apply</button>
+                                </div>
+                            
                             </div>
                         </div>
                     </div>
+                    <div class="card w-full lg:w-90 bg-base-100 shadow-xl">
+                        <div class="card-body w-full">
+                            <div id="parentDiv" class="list-none space-y-2 font-bold">
+                                <!-- <li>1. Home</li>
+                                    <li>2. Home</li>
+                                    <li>3. Home</li> -->
+                            </div>
+                            <hr>
+                            <div id="price" class="font-bold">
+                                <h2>Total Price : <span class="text-[#111111] opacity-50"><span>00</span> TK</span></h2>
+                                <h2>Discount : <span class="text-[#111111] opacity-50"><span>00</span> TK</span></h2>
+                                <h2>Total : <span class="text-[#111111] opacity-50"><span>00</span> TK</span></h2>
+                            </div>
+                            <hr class="my-4">
+                            <div class="w-full flex flex-col border-solid rounded-lg">
+                                <button id="buy-btn" disabled onclick="success.showModal()" class="btn bg-[#E527B2]">Make Purchase
+                                </button>
+                                <!-- heres modal -->
+                                <dialog id="success" class="modal">
+                                    <form method="dialog" class="modal-box flex flex-col justify-center items-center">
+                                        <img src="./images/congo.png" alt="">
+                                        <p class="py-4 text-4xl font-extrabold text-center">Congraculations</p>
+                                        <p class="text-xl mb-3">Your Purchase the product</p>
+                                        <div class="text-center">
+                                            <button onclick="home(this)" class="btn bg-[#E527B2] text-white">Go Home</button>
+                                        </div>
+                                    </form>
+                                </dialog>
+                            </div>
+                        </div>
+                    </div>
+        
                 </div>
-                <div class="lg:w-full">
-                    <h1 class="text-2xl">Kotchenwares</h1>
-                    <div class="flex flex-col lg:flex-row gap-4 justify-between items-center">
-                        <div onclick="buyNowParent(this)" class="card w-full lg:w-96 bg-base-100 shadow-xl cursor-pointer">
-                            <div class="bg-yellow-400 w-11/12 mx-auto rounded-lg mt-8">
-                                <figure>
-                                    <img class="p-3" src="./images/prod7.png" alt="Shoes" />
-                                </figure>
-                            </div>
-                            <div class="card-body text-center">
-                                <h2 class="text-2xl">Shoes!</h2>
-                                <p>69.50 $</p>
-                            </div>
-                        </div>
-                        <div onclick="buyNowParent(this)" class="card w-full lg:w-96 bg-base-100 shadow-xl cursor-pointer">
-                            <div class="bg-yellow-400 w-11/12 mx-auto rounded-lg mt-8">
-                                <figure>
-                                    <img class="p-3" src="./images/prod8.png" alt="Shoes" />
-                                </figure>
-                            </div>
-                            <div class="card-body text-center">
-                                <h2 class="text-2xl">Shoes!</h2>
-                                <p>2.50 $</p>
-                            </div>
-                        </div>
-                        <div onclick="buyNowParent(this)" class="card w-full lg:w-96 bg-base-100 shadow-xl cursor-pointer">
-                            <div class="bg-yellow-400 w-11/12 mx-auto rounded-lg mt-8">
-                                <figure>
-                                    <img class="p-3" src="./images/prod9.png" alt="Shoes" />
-                                </figure>
-                            </div>
-                            <div class="card-body text-center">
-                                <h2 class="text-2xl">Shoes</h2>
-                                <p>13.50 $</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>           
-            </div>
-            <div class="lg:w-1/4 flex flex-col justify-center items-center lg:mt-14 px-4 lg:justify-start space-y-4">
-                <div class="card w-full lg:w-90 bg-base-100 shadow-xl">
-                    <div class="card-body w-full">
-                        <h2 class="card-title">Have coupon?</h2>
-                        <div class="w-full flex justify-between items-center input input-bordered">
-                            <input id="coupne-code" type="text" placeholder="Type here"/>
-                            <button id="apply-btn" disabled class="btn bg-[#E527B2] ml-4">Apply</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="card w-full lg:w-90 bg-base-100 shadow-xl">
-                    <div class="card-body w-full">
-                        <div id="parentDiv" class="list-none space-y-2 font-bold">
-                            <!-- <li>1. Home</li>
-                            <li>2. Home</li>
-                            <li>3. Home</li> -->
-                        </div>
-                        <hr>
-                        <div id="price" class="font-bold">
-                            <h2>Total Price : <span class="text-[#111111] opacity-50"><span>00</span> TK</span></h2>
-                            <h2>Discount : <span class="text-[#111111] opacity-50"><span>00</span> TK</span></h2>
-                            <h2>Total : <span class="text-[#111111] opacity-50"><span>00</span> TK</span></h2>
-                        </div>
-                        <hr class="my-4">
-                        <div class="w-full flex flex-col border-solid rounded-lg">
-                            <button id="buy-btn" disabled onclick="success.showModal()" class="btn bg-[#E527B2]">Make Purchase
-                            </button>
-                            <!-- heres modal -->
-                            <dialog id="success" class="modal">
-                                <form method="dialog" class="modal-box flex flex-col justify-center items-center">
-                                    <img src="./images/congo.png" alt="">
-                                    <p class="py-4 text-5xl font-extrabold text-center">Successfull</p>
-                                    <div class="text-center">
-                                        <!-- if there is a button in form, it will close the modal -->
-                                        <button onclick="home(this)" class="btn bg-[#E527B2]">Home</button>
-                                    </div>
-                                </form>
-                            </dialog>
-                        </div>
-                    </div>
-                </div>
-                
             </div>
         </div>
     </div>
-    <!-- modal -->
-    <!-- <div class="container mx-auto flex justify-center items-center">
-        <div class="w-1/4 bg-red-400 rounded-lg text-center flex flex-col justify-center items-center">
-            <img src="./images/congo.png" alt="">
-            <p class="py-4">Press ESC key or click the button below to close</p>
-            <div class="text-center">
-                if there is a button in form, it will close the modal
-                <button class="btn">Close</button>
-            </div>
-        </div>
-    </div> -->
-    <!-- main part end -->
-
     <script src="./js/index.js"></script>
 </body>
 

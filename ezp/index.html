@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dynamic Element Addition</title>
+</head>
+
+<body>
+    <div id="parentDiv">
+        <!-- Existing child elements will be removed -->
+    </div>
+
+    <button id="addButton">Add Elements</button>
+
+    <script>
+        // Function to remove all child elements from a parent element
+        function removeAllChildren(parent) {
+            while (parent.firstChild) {
+                parent.removeChild(parent.firstChild);
+            }
+        }
+
+        // Function to add new elements to the parent div
+        function addElementsToParent(parent) {
+            for (let i = 1; i <= 5; i++) {
+                const newElement = document.createElement("p");
+                newElement.textContent = "New Element " + i;
+                parent.appendChild(newElement);
+            }
+        }
+
+        // Get references to the parent div and the add button
+        const parentDiv = document.getElementById("parentDiv");
+        const addButton = document.getElementById("addButton");
+
+        // Add event listener to the button to handle dynamic addition of elements
+        addButton.addEventListener("click", function () {
+            // Remove existing child elements from the parent div
+            removeAllChildren(parentDiv);
+
+            // Add new elements dynamically to the parent div
+            addElementsToParent(parentDiv);
+        });
+    </script>
+</body>
+
+</html>
