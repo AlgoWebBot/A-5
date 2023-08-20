@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summer Sale</title>
+
+    <!-- daisy UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+    <!-- header -->
+    <div class="bg-yellow-500 lg:min-h-screen">
+        <div class=" container mx-auto min-h-screen lg:flex justify-center items-center gap-10">
+            <div class="text-center">
+                <h1 class="text-2xl font-bold">---SALE FEVER---</h1>
+                <h1 class="text-5xl font-bold">Purchase TK 200 or <br>above & <span class="text-[#E527B2]">get 20%
+                        off</span></h1>
+                <div class="flex justify-center items-center">
+                    <p>Use Promo Code</p>
+                    <button class="btn bg-[#E527B2] text-white">SELL200</button>
+                </div>
+            </div>
+            <div>
+                <img src="./images/Summer 1.png" alt="banner-image">
+            </div>
+        </div>
+    </div>
+    <!-- header end -->
+
+    <!-- main part -->
+    <div class="container mx-auto mt-28 flex justify-center items-center">
+        <div class="w-full flex flex-col lg:flex-row justify-between bg-green-300">
+            <div class="w-full lg:w-3/4 p-4">
+                <div class="bg-gray-500 lg:w-full lg:bg-yellow-300">
+                    <h1 class="text-2xl">Kotchenwares</h1>
+                    <div class="flex flex-col lg:flex-row gap-4 justify-between items-center">
+                        <div onclick="buyNowParent(this)" class="card w-full lg:w-96 bg-base-100 shadow-xl cursor-pointer">
+                            <figure><img src="./images/prod1.png" alt="Shoes" /></figure>
+                            <div class="card-body text-center">
+                                <h2 class="text-2xl">Shoes!</h2>
+                                <p>18.50$</p>
+                            </div>
+                        </div>
+                        <div onclick="buyNowParent(this)" class="card w-full lg:w-96 bg-base-100 shadow-xl cursor-pointer">
+                            <figure><img src="./images/prod2.png" alt="Shoes" /></figure>
+                            <div class="card-body text-center">
+                                <h2 class="text-2xl">Shoes!</h2>
+                                <p>18.50$</p>
+                            </div>
+                        </div>
+                        <div onclick="buyNowParent(this)" class="card w-full lg:w-96 bg-base-100 shadow-xl cursor-pointer">
+                            <figure><img src="./images/prod3.png" alt="Shoes" /></figure>
+                            <div class="card-body text-center">
+                                <h2 class="text-2xl">Shoes!</h2>
+                                <p>18.50$</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-500 lg:w-full lg:bg-yellow-300">
+                    <h1 class="text-2xl">Kotchenwares</h1>
+                    <div class="flex flex-col lg:flex-row gap-4 justify-between items-center">
+                        <div onclick="buyNowParent(this)" class="card w-full lg:w-96 bg-base-100 shadow-xl cursor-pointer">
+                            <figure><img src="./images/prod1.png" alt="Shoes" /></figure>
+                            <div class="card-body text-center">
+                                <h2 class="text-2xl">Shoes!</h2>
+                                <p>18.50$</p>
+                            </div>
+                        </div>
+                        <div onclick="buyNowParent(this)" class="card w-full lg:w-96 bg-base-100 shadow-xl cursor-pointer">
+                            <figure><img src="./images/prod2.png" alt="Shoes" /></figure>
+                            <div class="card-body text-center">
+                                <h2 class="text-2xl">Shoes!</h2>
+                                <p>18.50$</p>
+                            </div>
+                        </div>
+                        <div onclick="buyNowParent(this)" class="card w-full lg:w-96 bg-base-100 shadow-xl cursor-pointer">
+                            <figure><img src="./images/prod3.png" alt="Shoes" /></figure>
+                            <div class="card-body text-center">
+                                <h2 class="text-2xl">Shoes!</h2>
+                                <p>18.50$</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-500 lg:w-full lg:bg-yellow-300">
+                    <h1 class="text-2xl">Kotchenwares</h1>
+                    <div class="flex flex-col lg:flex-row gap-4 justify-between items-center">
+                        <div onclick="buyNowParent(this)" class="card w-full lg:w-96 bg-base-100 shadow-xl cursor-pointer">
+                            <figure><img src="./images/prod1.png" alt="Shoes" /></figure>
+                            <div class="card-body text-center">
+                                <h2 class="text-2xl">Shoes!</h2>
+                                <p>18.50$</p>
+                            </div>
+                        </div>
+                        <div onclick="buyNowParent(this)" class="card w-full lg:w-96 bg-base-100 shadow-xl cursor-pointer">
+                            <figure><img src="./images/prod2.png" alt="Shoes" /></figure>
+                            <div class="card-body text-center">
+                                <h2 class="text-2xl">Shoes!</h2>
+                                <p>18.50$</p>
+                            </div>
+                        </div>
+                        <div onclick="buyNowParent(this)" class="card w-full lg:w-96 bg-base-100 shadow-xl cursor-pointer">
+                            <figure><img src="./images/prod3.png" alt="Shoes" /></figure>
+                            <div class="card-body text-center">
+                                <h2 class="text-2xl">Shoes!</h2>
+                                <p>18.50$</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div>
+                    <h1 class="text-2xl ml-8 lg:ml-0">Homeswares</h1>
+                    <div class="flex flex-col lg:flex-row gap-4 justify-between items-center">
+                        <div onclick="buyNowParent(this)" class="card w-80 bg-base-100 shadow-xl cursor-pointer">
+                            <figure>
+                                <img src="./images/prod4.png" alt="Shoes" /></figure>
+                            <div class="card-body text-center">
+                                <h2 class="text-2xl">Shoes!</h2>
+                                <p>18.50$</p>
+                            </div>
+                        </div>
+                        <div onclick="buyNowParent(this)" class="card w-80 bg-base-100 shadow-xl cursor-pointer">
+                            <figure>
+                                <img src="./images/prod5.png" alt="Shoes" /></figure>
+                            <div class="card-body text-center">
+                                <h2 class="text-2xl">Shoes!</h2>
+                                <p>18.50$</p>
+                            </div>
+                        </div>
+                        <div onclick="buyNowParent(this)" class="card w-80 bg-base-100 shadow-xl cursor-pointer">
+                            <figure>
+                                <img src="./images/prod6.png" alt="Shoes" /></figure>
+                            <div class="card-body text-center">
+                                <h2 class="text-2xl">Shoes!</h2>
+                                <p>18.50$</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h1 class=" text-2xl ml-8 lg:ml-0">Homeswares</h1>
+                    <div class="flex flex-col lg:flex-row gap-4 justify-between items-center">
+                        <div onclick="buyNowParent(this)" class="card w-80 bg-base-100 shadow-xl cursor-pointer">
+                            <figure>
+                                <img src="./images/prod7.png" alt="Shoes" /></figure>
+                            <div class="card-body text-center">
+                                <h2 class="text-2xl">Shoes!</h2>
+                                <p>18.50$</p>
+                            </div>
+                        </div>
+                        <div onclick="buyNowParent(this)" class="card w-80 bg-base-100 shadow-xl cursor-pointer">
+                            <figure>
+                                <img src="./images/prod8.png" alt="Shoes" /></figure>
+                            <div class="card-body text-center">
+                                <h2 class="text-2xl">Shoes!</h2>
+                                <p>18.50$</p>
+                            </div>
+                        </div>
+                        <div onclick="buyNowParent(this)" class="card w-80 bg-base-100 shadow-xl cursor-pointer">
+                            <div class="bg-green-400 p-4 mt-4 w-11/12 mx-auto rounded-lg">
+                                <figure>
+                                    <img src="./images/prod9.png" alt="Shoes" />
+                                </figure>
+                            </div>
+                            <div class="card-body text-center">
+                                <h2 class="text-2xl">Shoes!</h2>
+                                <p>18.50$</p>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+            <div class="lg:w-1/4 flex flex-col bg-red-300 justify-center items-center lg:mt-14 px-4 lg:justify-start space-y-4">
+                <div class="card w-full lg:w-90 bg-base-100 shadow-xl">
+                    <div class="card-body w-full">
+                        <h2 class="card-title">Have coupon?</h2>
+                        <div class="w-full flex justify-between items-center border-solid border-gray-600 rounded-lg">
+                            <input type="text pl-4" placeholder="Coupon code">
+                            <button class="btn bg-[#E527B2]">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card w-full lg:w-90 bg-base-100 shadow-xl">
+                    <div class="card-body w-full">
+                        <h2 class="card-title">Have coupon?</h2>
+                        <div class="w-full flex justify-between items-center border-solid bg-yellow-300 rounded-lg">
+                            <input type="text pl-4" placeholder="Coupon code">
+                            <button class="btn bg-[#E527B2]">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- main part end -->
+
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
