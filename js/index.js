@@ -34,6 +34,7 @@ document.querySelector('#apply-btn').addEventListener('click', () => {
     }
     document.querySelector('#coupne-code').value = '';
 })
+
 // reset class
 function home(target) {
     console.log(price)
@@ -46,5 +47,4 @@ function home(target) {
     document.querySelector('#price').childNodes[5].childNodes[1].innerText = '00 TK';
     document.querySelector('#buy-btn').disabled = true;
     document.querySelector('#apply-btn').disabled = true;
-
 }
